@@ -34,7 +34,6 @@ class Cachorro extends Animal {
   void fazerSom() {
     print("$nome não fez som!");
   }
-
 }
 
 class Gato extends Animal {
@@ -50,6 +49,7 @@ class Gato extends Animal {
   void fazerSom() {
    print("$nome miou a noite toda no telhado!");
   }
+  
   bool estaAmigavel() {
     return true;
   }
@@ -57,18 +57,17 @@ class Gato extends Animal {
 
 void main(){
 
-Cachorro cachorro = Cachorro("Dog", 10.0, 100);
+  Cachorro cachorro = Cachorro("Dog", 10.0, 100);
 
-cachorro.fazerSom();
-print(cachorro.nome);
-cachorro.comer();
-cachorro.brincar();
+  cachorro.fazerSom();
+  print(cachorro.nome);
+  cachorro.comer();
+  cachorro.brincar();
 
-Gato gato = Gato("Cat", 26);
+  Gato gato = Gato("Cat", 26);
 
-gato.fazerSom();
-print(gato.nome);
-gato.comer();
-print(gato.estaAmigavel());
-
+  gato.fazerSom();
+  print(gato.nome);
+  gato.comer();
+  print(gato.estaAmigavel());
 }
